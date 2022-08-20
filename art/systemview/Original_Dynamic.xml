@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+    <include>./Dynamic_controllersizefix.xml</include>
+    <include>./art/logosDynamic/${system.theme}.png</include>
+
+
+  <view name="system">
+    <carousel name="systemcarousel">
+      <color>FAFAFF01</color>
+      <colorEnd>FAFAFF01</colorEnd>
+      <logoSize>0.17 0.17</logoSize>
+      <visible>true</visible>
+      <opacity>1</opacity>
+      <zIndex>20</zIndex>
+      <pos>0.19 0.475</pos>
+      <size>0.8 1</size>
+      <origin>0 0</origin>
+      <logoScale>1</logoScale>
+      <logoPos>-1 0.02</logoPos>
+      <alignment>left</alignment>
+      <horizontlAlignment>top</horizontlAlignment>
+      <maxLogoCount>7</maxLogoCount>
+    </carousel>
+
+   <image name="Selected" extra="static">
+      <linearSmooth>true</linearSmooth>
+      <pos>0.01 0.355</pos>        
+      <size>0.175 0</size>
+      <origin>0 0</origin>
+      <roundCorners>0.02</roundCorners>
+      <path>./art/logosDynamics/${system.theme}.png</path>     
+      <zIndex>80</zIndex>
+    </image>
+   <image name="Marco" extra="static">
+      <linearSmooth>true</linearSmooth>
+      <pos>0.01 0.355</pos>        
+      <size>0.175 0</size>
+      <origin>0 0</origin>
+      <color>${baseColor}</color>
+      <roundCorners>0.02</roundCorners>
+      <path>./images/marco-activo.png</path>     
+      <zIndex>80</zIndex>
+    </image>
+
+    <text name="systemInfo">
+      <pos>-0.4 0.57</pos>
+      <size>1 0.25</size>
+      <backgroundColor>0000FF00</backgroundColor>
+      <color>${systemInfoColor}</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>2</glowSize>
+    </text>
+  </view>
+</theme>
