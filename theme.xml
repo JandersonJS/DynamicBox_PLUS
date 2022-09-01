@@ -185,6 +185,14 @@ originally based on: Carbon 2.0
     </helpsystem>
   </view>
 
+
+        <carousel name="systemcarousel">
+            <color>DDEEFFFF</color>
+            <colorEnd>FFFFFFDE</colorEnd>
+            <systemInfoDelay>0,1</systemInfoDelay>
+        </carousel>
+
+
   <view name="system">
       <text name="system_description" extra="static">
       <origin>0.5 0.5</origin>
@@ -759,12 +767,24 @@ Année de sortie : ${system.releaseYear}</text>
     </text>  
   </view>
   <view name="grid">
-    <image name="background">
-      <tile>true</tile>
+    <image name="background" extra="true">
+      <tile>false</tile>
+      <linearSmooth>true</linearSmooth>
+      <path>./art/background/${system.theme}.jpg</path>
+      <color>FFFFFFFF</color>
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <minSize>1 1</minSize>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="md_fanart" extra="true">
       <pos>0 0</pos>
+      <size>1 1</size>      
       <origin>0 0</origin>
-      <size>1 1</size>
-      <path>${backgroundImage}</path>
+      <color>808080</color>
+      <zIndex>1</zIndex>
+      <linearSmooth>true</linearSmooth>
+      <tile>false</tile>
     </image>
     <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
       <color>A0A0B000</color>
@@ -852,6 +872,25 @@ Année de sortie : ${system.releaseYear}</text>
     </ninepatch>
   </view>
   <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
+    <image name="background" extra="true">
+      <tile>false</tile>
+      <linearSmooth>true</linearSmooth>
+      <path>./art/background/${system.theme}.jpg</path>
+      <color>FFFFFFFF</color>
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <minSize>1 1</minSize>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="md_fanart" extra="true">
+      <pos>0 0</pos>
+      <size>1 1</size>      
+      <origin>0 0</origin>
+      <color>808080</color>
+      <zIndex>1</zIndex>
+      <linearSmooth>true</linearSmooth>
+      <tile>false</tile>
+    </image>
     <imagegrid name="gamegrid">
       <autoLayout>6 2</autoLayout>
       <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
@@ -872,6 +911,25 @@ Année de sortie : ${system.releaseYear}</text>
     </image>
   </customView>
   <customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
+    <image name="background" extra="true">
+      <tile>false</tile>
+      <linearSmooth>true</linearSmooth>
+      <path>./art/background/${system.theme}.jpg</path>
+      <color>FFFFFFFF</color>
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <minSize>1 1</minSize>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="md_fanart" extra="true">
+      <pos>0 0</pos>
+      <size>1 1</size>      
+      <origin>0 0</origin>
+      <color>808080</color>
+      <zIndex>1</zIndex>
+      <linearSmooth>true</linearSmooth>
+      <tile>false</tile>
+    </image>
     <text name="md_name">
       <color>ffffffff</color>
       <pos>0.04 0.76</pos>
@@ -929,6 +987,25 @@ Année de sortie : ${system.releaseYear}</text>
     </ninepatch>
   </customView>
   <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
+    <image name="background" extra="true">
+      <tile>false</tile>
+      <linearSmooth>true</linearSmooth>
+      <path>./art/background/${system.theme}.jpg</path>
+      <color>FFFFFFFF</color>
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <minSize>1 1</minSize>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="md_fanart" extra="true">
+      <pos>0 0</pos>
+      <size>1 1</size>      
+      <origin>0 0</origin>
+      <color>808080</color>
+      <zIndex>1</zIndex>
+      <linearSmooth>true</linearSmooth>
+      <tile>false</tile>
+    </image>
     <imagegrid name="gamegrid">
       <autoLayout>3 2</autoLayout>
       <autoLayoutSelectedZoom>1.03</autoLayoutSelectedZoom>
